@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0 charset="utf-8">
+    <!-- <link href='http://fonts.font.im/css?family=Ubuntu' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='http://fonts.font.im/css?family=Abril+Fatface' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.font.im/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="resource/gif.js-master/dist/gif.js"></script>
+    <script src="poster.js"></script>
+
+
+    <style>
+
+    body{
+      text-align: center;
+      background: grey
+    }
+    div{
+    }
+    </style>
+  </head>
+  <body>
+    <div class="blocker" id="contain">
+    </div>
+    <button onclick="setADD()">add</button>
+    <button onclick="setRender()">render</button>
+  </body>
+
+
+</html>
+
+<!-- <script>
+    let gif;
+    setTimeout(function(){
+      gif = new GIF({
+        workers: 1,
+        quality: 100,
+        workerScript:'resource/gif.js-master/dist/gif.worker.js',
+      })
+
+      // let count = 0
+      // let inter = 100
+      // let add = function(){
+      //   if(count <= 100){
+      //     console.log(count);
+      //     gif.addFrame(canvas.canvas,{delay:100})
+      //     count += 1
+      //     setTimeout(add,inter)
+      //   }
+      // }
+      // setTimeout(add,inter)
+      for(let i = 0; i < 50;i++){
+        gif.addFrame(canvas.canvas,{delay:50})
+      }
+      console.log('get out');
+      gif.on('finished',function(blob){
+        console.log("he says finish");
+        window.open(URL.createObjectURL(blob))
+      })
+      gif.render();
+    },1000)
+
+
+</script> -->
